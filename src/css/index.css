@@ -1,0 +1,249 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+/* Layout */
+/* Colors */
+/* Font and typography */
+/* Font weight */
+/* Margins */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.938rem;
+  background-color: #ddd4cd;
+  color: #5b5757;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #3a2d28;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-layout {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ddd4cd;
+}
+
+.button {
+  display: inline-block;
+  background-color: #184d2b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #a6a998;
+}
+
+.button-link {
+  background: none;
+  padding: 0;
+  color: #184d2b;
+}
+
+.button-link:hover {
+  background-color: transparent;
+  color: #a6a998;
+}
+
+.logo {
+  margin: 0.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #3a2d28;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #d1c7bd;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #3a2d28;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #ddd4cd;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #5b5757;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Active menu link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: #3a2d28;
+  border-radius: 50%;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ddd4cd;
+}
+
+/* For full-screen images on small screens */
+@media screen and (max-width: 359px) {
+  .home__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .home__container {
+    padding: 5rem 0 0;
+  }
+  .home__img {
+    order: 1;
+  }
+  .home__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 7rem;
+  }
+  .nav {
+    height: calc(3rem + 1.5rem);
+  }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__item {
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .home__container {
+    padding: 7rem 2rem 0;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .container-layout {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img {
+    width: 469px;
+  }
+  .home__container {
+    column-gap: 5rem;
+  }
+}
+
+/* Show menu when toggled */
+.show-menu {
+  top: calc(3rem + 1rem);
+}
+/*# sourceMappingURL=index.css.map */

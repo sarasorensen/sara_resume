@@ -1,0 +1,119 @@
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: $font-semi-bold;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $first-color-alt;
+  }
+
+  &-link {
+    background: none;
+    padding: 0;
+    color: $first-color;
+
+    &:hover {
+      background-color: transparent;
+      color: $first-color-alt;
+    }
+  }
+}
+
+// Navbar
+
+.logo {
+  margin: $mb-1;
+  margin-top: 0;
+  font-size: $title-size;
+  color: $title-color;
+  font-weight: $font-bold;
+  display: flex;
+  justify-content: center;
+  font-family: $logo-font !important;
+}
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: $sub-title-color;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $title-color;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $body-color;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $text-color;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Active menu link */
+.active-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: $title-color;
+    border-radius: 50%;
+  }
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $body-color;
+}
